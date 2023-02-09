@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import React from "react"
+import Header from "../public/components/Header"
+import Cart from "../public/pages/Cart"
+import Photos from "../public/pages/Photos"
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      
+    <div>
+      <Header />
     </div>
   )
 }
