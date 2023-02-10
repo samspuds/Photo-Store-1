@@ -1,8 +1,11 @@
 import React from "react"
+// import {Link} from "react-router-dom"
 
 function Header(){
     return (
-            <div>a</div>
+            <nav>
+                <h2>Take your pic</h2>
+            </nav>
 
     )
 }

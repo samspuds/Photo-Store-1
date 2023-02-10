@@ -1,0 +1,26 @@
+:root {
+background-color: grey;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+background-color: rgb(121, 177, 121);
+height: 4em;
+width: 100%;
+padding: 1px 1px;
+}
+
+.photos {
+height: 100vh;
+width: 100%;
+}
+
+.cart {
+  height: 100vh;
+  width: 100%;
+}

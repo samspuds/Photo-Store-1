@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../public/components/Header"
 import Cart from "../public/pages/Cart"
 import Photos from "../public/pages/Photos"
-import {Switch, Route} from "react-router-dom"
+import {Switch, Route, Routes} from "react-router-dom"
 
 
 function App() {
@@ -10,14 +10,10 @@ function App() {
   return (
     <div>
       <Header />
-      <Switch>
-          <Route>
-            <Photos />
-          </Route>
-          <Route>
-            <Cart />
-          </Route>
-      </Switch>
+          <Routes>
+            <Route index element={<Photos />} />
+            <Route path="Cart" element={<Cart />} />
+          </Routes>
     </div>
   )
 }
