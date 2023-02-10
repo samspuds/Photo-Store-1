@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../public/components/Header"
 import Cart from "../public/pages/Cart"
 import Photos from "../public/pages/Photos"
-import {Switch, Route, Routes} from "react-router-dom"
+import { Route, Routes} from "react-router-dom"
 
 
 function App() {
@@ -10,10 +10,12 @@ function App() {
   return (
     <div>
       <Header />
-          <Routes>
+      <Routes>
             <Route index element={<Photos />} />
+            <Route path="Photos" element={<Photos />} />
             <Route path="Cart" element={<Cart />} />
           </Routes>
+          
     </div>
   )
 }
